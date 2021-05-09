@@ -1,0 +1,30 @@
+-accesorios de paseo-
+
+Arnes: 5000 - Stock: 100
+Correa: 7000 - Stock: 100
+Collar: 3000 - Stock: 100
+Bozal Plastico 3990 - Stock: 100
+
+-juguetes de entretencion-
+
+Pelota de plastico: 3990 - Stock: 100 
+hueso de plastico: 3990 - Stock: 100
+bolas de lana: 5990 - Stock: 100
+ratoncillo peludos: 900 - Stock: 100
+
+-entrenamiento y relajacion-
+
+hierba de gato: 5990 - Stock: 100
+Silbato de entrenamiento: 29990 - Stock: 100
+clicker de entrenamiento para perros: 4500 - Stock: 100 
+sunicalm antiestrés para perros y gatos: 17190 - Stock: 100
+calmer spray aromaterapia para mascotas: 18900 - Stock: 100
+
+-camas, cestas, nidos o muebles-
+
+Cama para perro: 39990 - Stock: 100
+transportadora pet carrier: 39990 - Stock: 100
+transportadoras animales de tela: 34990 - Stock: 100
+Rasguniador con cama: 59990 - Stock: 100
+cama iglu para perro o gato: 32990 - Stock: 100
+cojin para perro: 35990 - Stock: 100

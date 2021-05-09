@@ -1,0 +1,8 @@
+-articulos esteticos-
+
+corbata para mascota: 9990 - Stock: 100
+Monio para mascotas: 9990 - Stock: 100
+chaqueta para perros: 25000 - Stock: 100
+poleras para perros: 9900 - Stock: 100
+botas para perros: 17500 - Stock: 100
+impermiable para perro: 19445 - Stock: 100
