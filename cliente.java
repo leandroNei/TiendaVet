@@ -2,7 +2,7 @@ package TiendaVet;
 
 public class cliente{
 
-    private String[] nombre;
+    private String nombre;
     private String direccion;
     private String sexo;
     private int edad;
@@ -14,7 +14,7 @@ public class cliente{
     private int cantidad;
     
 
-    public cliente(String[] n, String d, String s, int tel, int rut, int p){
+    public cliente(String n, String d, String s, int tel, int rut, int p){
         this.nombre = n;
         this.direccion = d;
         this.sexo = s;
@@ -25,7 +25,7 @@ public class cliente{
         this.cantidad = 0;
     }
 
-    public void setNombre(String[] n){
+    public void setNombre(String n){
         this.nombre = n;
     }
 
@@ -54,7 +54,7 @@ public class cliente{
         cantidad++;
     }
 
-    public String[] getNombre(){
+    public String getNombre(){
         return this.nombre;
     }
 
@@ -85,4 +85,20 @@ public class cliente{
     public int getcantidad(){
         return this.cantidad;
     }
+
+    /*
+    @Override
+    public String toString(){
+        
+        System.out.println("/--nombre del cliente: " + this.nombre + " --/");
+        String n = "Productos comprados:\n-";
+
+        for(int i=0;i<this.cantidad;i++){
+
+            n = n + this.canasta[i].getnombre();
+            n = n + "\n-";
+        }
+        System.out.println("/--Dinero sobrante: " + this.presupuesto + " --/");
+        return n;
+    }*/
 }

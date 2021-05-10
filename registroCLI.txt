@@ -1,2 +1,1 @@
 Nombre; Edad; Sexo; Id; Direccion; Telefono
-leandro ignacio neilaf ibanez; 20; masculino; 20232032; calbuco1023; 30199

@@ -15,13 +15,16 @@ public class tienda{
     public static void main(String[] args){
 
         int c, k, op, op2, op3;
-        int rut, tel, edad;
+        int edad, numCasa;
+        String tel;
+        String rut;
         
         String sexo, direccion;
         String name, name1, name2, name3;
 
         Scanner sc = new Scanner(System.in);
         Scanner sc1 = new Scanner(System.in);
+        Scanner telefono = new Scanner(System.in);
         Scanner nombre = new Scanner(System.in);
         Scanner opcion = new Scanner(System.in);
         
@@ -52,22 +55,25 @@ public class tienda{
                         System.out.println("\nIngrese el sexo del cliente: ");
                         sexo = sc1.next();
                 
-                        System.out.println("\nIngrese el rut del cliente: ");
-                        rut = sc.nextInt();
+                        System.out.println("\nIngrese el rut del cliente: (con punto y guion) ");
+                        rut = sc.next();
                 
                         System.out.println("\nIngrese la direccion del cliente: ");
-                        direccion = sc1.next();
+                        System.out.println("Ingrese la calle: ");
+                        direccion = sc1.next(); 
+                        System.out.println("Ingrese el numero de casa: ");
+                        numCasa = sc.nextInt();
                 
                         System.out.println("\nIngrese el numero telefonico del cliente: ");
-                        tel = sc.nextInt();
+                        tel = telefono.next();
 
-                        try {
+                        try{
                             FileWriter registrar = new FileWriter("TiendaVet/registroCLI.txt", true);
                             registrar.write(""+ name +" "+ name1 +" "+ name2 +" "+ name3);
                             registrar.write("; "+ edad);
                             registrar.write("; "+ sexo);
                             registrar.write("; "+ rut); 
-                            registrar.write("; "+ direccion); 
+                            registrar.write("; "+ direccion +" "+ numCasa); 
                             registrar.write("; "+ tel +"\n"); 
                 
                             registrar.close();
@@ -169,7 +175,7 @@ public class tienda{
 
                         switch(op3){
                             case 1:
-                                
+
                                 break;
                             case 2:
                             
