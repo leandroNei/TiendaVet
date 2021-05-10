@@ -5,6 +5,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.FileNotFoundException;
 
+import java.util.ArrayList;
+
 import java.util.Scanner;
 import java.util.Random;
 
@@ -12,16 +14,17 @@ public class tienda{
 
     public static void main(String[] args){
 
-        int c, k, op, op2;
+        int c, k, op, op2, op3;
         int rut, tel, edad;
         
         String sexo, direccion;
-        String name;
+        String name, name1, name2, name3;
 
         Scanner sc = new Scanner(System.in);
-        Scanner nombre = new Scanner(System.in);
         Scanner sc1 = new Scanner(System.in);
+        Scanner nombre = new Scanner(System.in);
         Scanner opcion = new Scanner(System.in);
+        
         
         do{
             System.out.println("\nBienvenido a la tienda favorita de tus mascotas, Eliga una opcion. ");
@@ -41,7 +44,7 @@ public class tienda{
                     for(int i=0 ; i<c; i++){
             
                         System.out.println("\nIngrese el nombre completo del cliente: ");
-                        name = nombre.next();
+                        name = nombre.next(); name1 = nombre.next(); name2 = nombre.next(); name3 = nombre.next();
                 
                         System.out.println("\nIngrese la edad del cliente: ");
                         edad = sc.nextInt();
@@ -60,7 +63,7 @@ public class tienda{
 
                         try {
                             FileWriter registrar = new FileWriter("TiendaVet/registroCLI.txt", true);
-                            registrar.write(""+ name);
+                            registrar.write(""+ name +" "+ name1 +" "+ name2 +" "+ name3);
                             registrar.write("; "+ edad);
                             registrar.write("; "+ sexo);
                             registrar.write("; "+ rut); 
@@ -147,16 +150,46 @@ public class tienda{
                                 break;
                         }
 
-                    }while(op2 > 0);
+                        if(op2 < 0 || op2 > 4)
+                            System.out.println("\nERROR - Ingrese una opcion valida");
+
+                    }while(op2 > 0 || op2 < 0);
                     break;
                 case 3:
                     
                     break;
                 case 4:
+                    do{
+                        System.out.println("\nSeleccione stock a reponer: \n1) Productos de aseo. ");
+                        System.out.println("2) Productos Esteticos y prendas. ");
+                        System.out.println("3) Accesorios y jueguetes. ");
+                        System.out.println("4) Alimentos. ");
+                        System.out.println("0) volver menu principal. ");
+                        op3 = opcion.nextInt();
 
-                    break;
-                case 5:
-                    
+                        switch(op3){
+                            case 1:
+                                
+                                break;
+                            case 2:
+                            
+                                break;
+                            case 3:
+
+
+                                break;
+                            case 4:
+
+                                break;
+                            case 0:
+
+                                break;
+                        }
+
+                        if(op3 > 4 || op3 < 0)
+                            System.out.println("\nERROR - Ingrese una opcion valida");
+
+                    }while(op3 > 0 || op3 < 0);
                     break;
                 case 0:
                     System.out.println("Gracias por preferirnos vuelva pronto. ");
@@ -165,9 +198,9 @@ public class tienda{
                     break;
             }
 
-            if(op > 5)
+            if(op > 5 || op < 0)
                 System.out.println("\nERROR - Ingrese una opcion valida");
 
-        }while(op > 0 );
+        }while(op > 0 || op < 0);
     }
 }
