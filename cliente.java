@@ -6,15 +6,15 @@ public class cliente{
     private String direccion;
     private String sexo;
     private int edad;
-    private int tel; //telefono
-    private int rut; //id
+    private String tel; //telefono
+    private String rut; //id
 
     private producto canasta[] = new producto[5];
     private int presupuesto;
     private int cantidad;
     
 
-    public cliente(String n, String d, String s, int tel, int rut, int p){
+    public cliente(String n, String d, String s, String tel, String rut, int p){
         this.nombre = n;
         this.direccion = d;
         this.sexo = s;
@@ -37,11 +37,11 @@ public class cliente{
         this.sexo = s;
     }
 
-    public void setRut(int rut){
+    public void setRut(String rut){
         this.rut = rut;
     }
 
-    public void setTel(int tel){
+    public void setTel(String tel){
         this.tel = tel;
     }
 
@@ -66,11 +66,11 @@ public class cliente{
         return this.sexo;
     }
     
-    public int getTel(){
+    public String getTel(){
         return this.tel;
     }
 
-    public int getRut(){
+    public String getRut(){
         return this.rut;
     }
 
